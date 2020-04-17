@@ -77,17 +77,7 @@ if(!function_exists("findDCPage")) {
 
 		//Call Hooks
 
-		$toolBar=[
-		    // "loadNewApplication"=>["title"=>"Pending Applications","align"=>"right","class"=>($reportType=="new")?"active":"","policy"=>"hrApplications.new.access"],
-		    // "loadHistory"=>["title"=>"History","align"=>"right","class"=>($reportType=="history")?"active":"","policy"=>"hrApplications.history.access"],
-		    // "loadStaffHistory"=>["title"=>"Staff History","align"=>"right","class"=>($reportType=="staff_history")?"active":"","policy"=>"hrApplications.staff_history.access"],
-		   /* "loadMyApplication"=>["title"=>"My Application","align"=>"right","class"=>($reportType=="main")?"active":"","policy"=>"hrApplication.main.access"],
-		    "loadUpcoming"=>["title"=>"Upcoming","align"=>"right","class"=>($reportType=="upcoming")?"active":"","policy"=>"hrApplication.upcoming.access"],
-		    "loadHistory"=>["title"=>"History","align"=>"right","class"=>($reportType=="history")?"active":"","policy"=>"hrApplication.history.access"],*/
-		    //"listContent"=>["icon"=>"<i class='fa fa-refresh'></i>","tips"=>"Refresh"]
-		];
-		//if(strlen($slug['tab'])<=0)
-
+		$toolBar=[];
 
 		if(isset($pageConfig['actions']) && is_array($pageConfig['actions'])) {
 			foreach ($pageConfig['actions'] as $key => $config) {
