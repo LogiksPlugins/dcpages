@@ -1,0 +1,31 @@
+{
+    "title":"Demo Page",
+    "schema": "1.0",
+    "category": "Hr",
+	"privilege": "*",
+	"blocked": false,
+	"script":false,
+	"hooks": {
+		"fieldupdate": {
+		    "modules":["bizflow","bizlogger"]
+		}
+	},
+    "actions":{
+        "reloadDCPage":{"icon":"fa fa-refresh","tips":"Refresh"},
+        "forms@visit.main/new": {
+			"label": "Add Visit",
+			"icon": "fa fa-plus"
+		}
+    },
+    "tabs":{
+        "reports@visit.main": {
+            "title":"Demo"
+        },
+        "reports@visit.history": {
+            "title":"History"
+        },
+        "alert":{
+            "label":"Alert"
+        }
+    }
+}
