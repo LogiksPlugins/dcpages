@@ -223,7 +223,7 @@ if(!function_exists("findDCPage")) {
 							
 							$('#pgworkspace').html('<div class=\'ajaxloading ajaxloading5\'><br><br><br><br><br><br><br><br><br></div>');
 							$('#pgworkspace').load('{$tabConfig['url']}', function() {
-							    console.log('Tab Loaded');
+							    //console.log('Tab Loaded');
 							});
 						}";
 						break;
